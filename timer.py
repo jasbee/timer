@@ -13,7 +13,7 @@ if x is 's':
             x1 = 'p'
         elif x is 'r':
             start = time.clock()
-            print('         ', end='\r')
+            print('                         ', end='\r')
             print('0:0:0.00', end='\r')
             x = msvcrt.getwch()
         elif x is 's':
