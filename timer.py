@@ -36,7 +36,14 @@ if x is 's':
                 c = str(round(seconds, 2))
                 if float(c) < 0.02:
                     print('                         ', end='\r')
-                print(a + ':' + b + ':' + c, end='\r')
+                if(minutes < 10 and seconds < 10):
+                    print(a + ':' + '0' + b + ':' + '0' + c, end='\r')
+                elif(minutes < 10):
+                    print(a + ':' + '0' + b + ':' + c, end='\r')
+                elif(seconds < 10):
+                    print(a + ':' + b + ':' + '0' + c, end='\r')
+                else:
+                    print(a + ':' + b + ':' + c, end='\r')
                 x1 = 's'
         else:
             x = x1
