@@ -17,7 +17,7 @@ if x is 's':
             x1 = 'p'
         elif x is 'r':
             print('                         ', end='\r')
-            print('0:0:0.00', end='\r')
+            print('0:00:00.00', end='\r')
             x = msvcrt.getwch()
             start = time.clock()
             pause1 = 0.0
