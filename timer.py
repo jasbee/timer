@@ -1,7 +1,7 @@
 import time
 import msvcrt
 
-x = input('Press s to start, p to pause, or r to reset: ')
+x = input('Press s to start, p to pause, r to reset, or x to exit: ')
 pause1 = 0.0
 pause2 = 0.0
 
@@ -45,5 +45,7 @@ if x is 's':
                 else:
                     print(a + ':' + b + ':' + c, end='\r')
                 x1 = 's'
+        elif x is 'x':
+            exit()
         else:
             x = x1
